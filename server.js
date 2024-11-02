@@ -27,7 +27,7 @@ app.use(
     credentials: true, // Allow credentials (cookies) to be sent
   })
 );
-
+app.options('*', cors());
 // Cookie session configuration
 app.use(
   cookieSession({
